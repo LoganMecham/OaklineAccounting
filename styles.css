@@ -298,6 +298,10 @@ section[id] {
     flex-wrap: wrap;
   }
 
+  .footer-links {
+    gap: 0.6rem 0.9rem;
+  }
+
   .site-logo {
     height: 96px;
   }
