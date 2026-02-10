@@ -261,6 +261,57 @@ section[id] {
   font-weight: 700;
 }
 
+.about-preview {
+  margin-top: 1.25rem;
+  max-width: 760px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.2rem;
+}
+
+.about-page h1 {
+  margin-bottom: 0.8rem;
+}
+
+.about-layout {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.about-cta {
+  margin-top: 1.5rem;
+  background: #eef3ec;
+  border: 1px solid #c4d2c4;
+  border-radius: 14px;
+  padding: 1.2rem;
+}
+
+.about-cta p {
+  margin-top: 0.8rem;
+  margin-bottom: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover,
+.footer-links a.active {
+  color: var(--brand);
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 1.2rem 0;
@@ -281,6 +332,10 @@ section[id] {
 
   nav {
     flex-wrap: wrap;
+  }
+
+  .footer-links {
+    gap: 0.6rem 0.9rem;
   }
 
   .site-logo {
