@@ -7,6 +7,11 @@
   --brand-dark: #21452b;
   --accent: #c8ab7f;
   --line: #dfd1bc;
+  --fs-body: 1rem;
+  --fs-nav: 0.95rem;
+  --fs-h1: clamp(2rem, 4vw, 3.2rem);
+  --fs-h2: clamp(1.6rem, 3vw, 2.2rem);
+  --fs-h3: clamp(1.2rem, 2vw, 1.45rem);
 }
 
 * {
@@ -16,9 +21,35 @@
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: var(--fs-body);
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1rem;
 }
 
 .container {
@@ -59,6 +90,7 @@ nav a {
   text-decoration: none;
   color: var(--muted);
   font-weight: 600;
+  font-size: var(--fs-nav);
 }
 
 nav a.active,
@@ -85,19 +117,12 @@ nav a:hover {
   font-size: 0.85rem;
 }
 
-h1 {
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  line-height: 1.15;
-  margin: 0.8rem 0;
-}
-
 .section {
   padding: 4rem 0;
 }
 
 .section h2 {
   margin-top: 0;
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
 }
 
 .section-intro {
@@ -122,6 +147,13 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 1.2rem;
+}
+
+.card > *:last-child,
+.price-card > *:last-child,
+.panel > *:last-child,
+.price-table-wrap > *:last-child {
+  margin-bottom: 0;
 }
 
 .section-accent {
@@ -247,6 +279,10 @@ h1 {
   padding: 1.2rem 0;
   color: var(--muted);
   background: var(--card);
+}
+
+.site-footer p {
+  margin-bottom: 0;
 }
 
 @media (max-width: 920px) {
