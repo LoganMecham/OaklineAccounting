@@ -78,9 +78,9 @@ ol {
   padding: 0.8rem 0;
 }
 
-.logo img {
+.site-logo {
   width: auto;
-  height: 70px;
+  height: 110px;
   object-fit: contain;
   display: block;
 }
@@ -283,7 +283,7 @@ section[id] {
     flex-wrap: wrap;
   }
 
-  .logo img {
-    height: 58px;
+  .site-logo {
+    height: 70px;
   }
 }
